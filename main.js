@@ -849,7 +849,13 @@ btnClear.addEventListener('click', function (event) {
 )
 let btnRefresh =document.getElementById("new-search")
 btnRefresh.addEventListener('click',function(){
-    location.reload()
+window.scrollTo({
+    top:0,
+    behavior:"smooth"
+})
+setTimeout(function() {  
+    location.reload();  
+}, 1000);
 })
 
 
